@@ -14,6 +14,7 @@ Born from the vault "Seishin Zukan"; works with any PARA-shaped vault.
 | `/zukan:devlog` | Log a dev-journey entry to today's note + project status log |
 | `/zukan:weekly` | Review the week: synthesize dailies, update project statuses |
 | `/zukan:recall` | Answer "when/what/where did I…" questions from the vault |
+| `/zukan:kiroku` | Persistent session chronicle — logs work into the vault as you go, until "stop kiroku" |
 
 ## Vault layout assumed (PARA)
 

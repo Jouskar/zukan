@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'ZUKAN ACTIVE — vault workflow mode. Route every user message per CLAUDE.md routing table (daily/devlog/mindstorm/project-idea/recall/weekly) — messages themselves are triggers, no command needed. KIROKU ON by default: log state changes (decisions+why, builds, ships, milestones) at checkpoints into daily + project changelogs + area observations; commit each checkpoint; off only on \"stop kiroku\".'"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'ZUKAN: route message per CLAUDE.md table if vault content. KIROKU ON: log state changes at checkpoints.'"
+          }
+        ]
+      }
+    ]
+  }
+}

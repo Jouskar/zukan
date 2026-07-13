@@ -41,6 +41,15 @@ claude plugin install zukan
 cp -r skills/* <vault>/.claude/skills/
 ```
 
+## Always-on mode (no commands needed)
+
+Two layers make zukan persistent from session start:
+
+1. **`CLAUDE.md` routing table** in your vault root (see this repo's README source vault) — Claude reads it at session start and routes plain messages to skills by content.
+2. **Hooks** — copy `hooks/settings-example.json` to `<vault>/.claude/settings.json`. SessionStart announces zukan+kiroku active; UserPromptSubmit re-injects the reminder every message (survives long conversations). Restart Claude Code after adding.
+
+With both, "today I fixed the CI pipeline" auto-routes to `daily` and kiroku logs session work — no slash commands ever.
+
 ## Conventions the skills follow
 
 - Git commit after every meaningful change (vault = repo)

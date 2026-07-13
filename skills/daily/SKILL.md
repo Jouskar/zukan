@@ -1,6 +1,6 @@
 ---
 name: daily
-description: Use when the user shares what happened in their day — life events, work updates, cases handled, ideas, moods, todos — or types /daily. Also when they say "log this", "note for today", "add to my journal".
+description: Use when the user shares day content in any phrasing — diary-style recaps ("today I…", "met with…", "long day"), work updates, cases handled, feelings/mood/energy, todos for tomorrow — even without any command. Also on /daily, "log this", "note this down", "add to my journal".
 ---
 
 # Daily Capture

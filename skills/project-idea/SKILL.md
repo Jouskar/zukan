@@ -1,6 +1,6 @@
 ---
 name: project-idea
-description: Use when the user pitches a new project or product idea to develop — "I want to build…", "new project:", "/project-idea" — and wants it captured as a structured project, not a quick note.
+description: Use when the user pitches something they want to build or start — "I want to build…", "new project", "startup idea", "an app/platform/tool that…" — signalling commitment beyond a passing thought. Also on /project-idea.
 ---
 
 # Project Idea

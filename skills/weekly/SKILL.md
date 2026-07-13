@@ -1,6 +1,6 @@
 ---
 name: weekly
-description: Use when the user asks for a weekly review, retro, or summary of recent days — "/weekly", "how was my week", "review this week".
+description: Use when the user asks to review or summarize a period — "/weekly", "how was my week", "weekly review", "retro", "what did I get done lately", "summarize my last days".
 ---
 
 # Weekly Review

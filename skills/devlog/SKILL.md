@@ -1,6 +1,6 @@
 ---
 name: devlog
-description: Use when the user reports development progress on a project — feature shipped, bug fixed, decision made, milestone hit — "/devlog", "progress update", "shipped X today".
+description: Use when the user reports concrete development progress or a technical decision on an existing project — "shipped", "fixed", "implemented", "refactored", "decided to use X", "milestone", "finally works". Also on /devlog, "progress update".
 ---
 
 # Dev Log

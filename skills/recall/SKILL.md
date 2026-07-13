@@ -1,6 +1,6 @@
 ---
 name: recall
-description: Use when the user asks what/when/where questions about their own past notes — "when did I…", "what was that idea about…", "did I ever write…", "/recall".
+description: Use when the user asks about their own past notes or memories in the vault — "when did I…", "what was that idea about…", "did I ever write/mention…", "find my note on…", "who was the person I met…". Also on /recall.
 ---
 
 # Recall

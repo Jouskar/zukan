@@ -1,6 +1,6 @@
 ---
 name: mindstorm
-description: Use when the user drops a raw idea, spark, or "what if" that deserves its own note but isn't a committed project yet — "/mindstorm", "idea:", "random thought".
+description: Use when the user drops a single raw idea or spark without commitment to build it — "what if…", "idea:", "random/crazy thought", "imagine if" — and the message is mostly just that idea. Also on /mindstorm.
 ---
 
 # Mindstorm

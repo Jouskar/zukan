@@ -32,7 +32,7 @@ Missing pieces are created on first use. Vault root = the directory Claude Code 
 
 ```bash
 # as a plugin (recommended)
-claude plugin marketplace add <this-repo-url>
+claude plugin marketplace add Jouskar/zukan
 claude plugin install zukan
 
 # or drop skills into one vault only

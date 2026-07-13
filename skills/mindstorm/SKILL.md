@@ -13,8 +13,8 @@ Capture a spark as an atomic idea note, linked into the vault.
    - Spark: what triggered it (user's words)
    - Core concept: 2-5 sentences, sharpened
    - Open questions: at least 2, including ones the user didn't raise
-   - Related: wikilinks to projects/notes it touches
-2. **If it belongs to an existing project** (mentions it, or obviously extends it): put it in that project's folder instead, and add a line to the project's changelog/status log.
+   - Related: wikilinks to projects, **areas** (`2-Areas/`), and resource notes it touches — match by meaning, not keyword
+2. **If it belongs to an existing project** (mentions it, or obviously extends it): put it in that project's folder instead, and add a line to the project's changelog/status log. If it belongs to an area (an idea about improving team culture → `[[Cultural Transformation]]`), link both ways: idea note ↔ area note.
 3. **Backlink**: today's daily note `## Mindstorm / Ideas` gets a one-liner + wikilink (create today's note only if it already should exist — don't force).
 4. **Commit**: `Mindstorm: <short title>`.
 

@@ -13,7 +13,8 @@ Record development progress in two places: the day and the project.
 2. **Project note**: append to its `## Status log` (or Status Log section): `- YYYY-MM-DD: <what happened>`. Decisions with a "why" → also the project changelog note if one exists (changelog-first convention).
 3. **Daily note**: `## Dev Log` gets the same line + wikilink to the project. Create today's note from `Templates/Daily Note` if missing.
 4. **Done items**: if the progress completes an open question / next-step checkbox in the project note, check it off with the date.
-5. **Commit**: `Devlog <project>: <short summary>`.
+5. **Area echo**: progress that also reflects an ongoing area (`2-Areas/`) — e.g. a mentoring win → `[[Cultural Transformation]]`, a habit held → `[[Health]]` — gets one dated line in that area note linking back. Match by meaning, not keyword.
+6. **Commit**: `Devlog <project>: <short summary>`.
 
 ## Rules
 

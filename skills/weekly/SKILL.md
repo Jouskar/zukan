@@ -13,6 +13,7 @@ Synthesize the week from daily notes; surface momentum and drift.
 2. **Write** `0-Daily/Week YYYY-Www.md`:
    - **Highlights** — 3-5 things that mattered (from Dev Log + Notes)
    - **Projects moved** — per project: what advanced, wikilinked
+   - **Areas pulse** — per area in `2-Areas/` touched this week: one-line trend ("Cultural Transformation: 3 coaching moments, resistance softening"), wikilinked; untouched areas listed as dormant
    - **Ideas born** — mindstorms captured this week, with links
    - **Dropped balls** — unchecked tasks older than 3 days, surfaced verbatim
    - **Mood curve** — one line if mood data exists

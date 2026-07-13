@@ -16,9 +16,11 @@ Route the user's day into today's daily note, connect it to the rest of the vaul
    - ideas, "what if", sparks → `## Mindstorm / Ideas`
    - anything actionable ("need to", "tomorrow", "don't forget") → `## Tasks` as `- [ ]` with due date if stated
    - meetings, people, everything else → `## Notes`
-3. **Cross-link, both directions**:
+3. **Cross-link, both directions — projects AND areas**:
    - Mention of a project that has a folder in `1-Projects/` → wikilink it: `[[Job Simulator]]`
    - Check the mentioned project's note for open questions or next steps the day's news answers (a person met, a decision made, a blocker cleared). If one matches, update that project note too (check the box / add a dated line) and link today's daily note there.
+   - **Scan `2-Areas/` for thematic matches**: content touching an ongoing area of the user's life (e.g. team culture story → `[[Cultural Transformation]]`, workout → `[[Health]]`) gets wikilinked, and the area note gets a dated observation line linking back to today. Match by meaning, not keyword — a story about a colleague resisting feedback IS cultural-transformation material.
+   - **Recurring theme with no area note yet** (3rd+ daily mentioning the same life theme): propose creating `2-Areas/<Theme>.md` — don't create silently, ask in one line.
    - Substantial standalone idea (a paragraph, not a phrase) → also create a note in `3-Resources/` from `Templates/Mindstorm` and wikilink it from the daily.
 4. **Fix the footer**: bottom `Links:` line points to the *previous* daily note that actually exists (`[[2026-07-12]]`), never to itself. No previous note → drop the line.
 5. **Commit**: `git add -A && git commit` — message like `Daily 2026-07-13: co-founder meeting, CI fix`. Vault not a git repo → skip silently.

@@ -15,6 +15,7 @@ Born from the vault "Seishin Zukan"; works with any PARA-shaped vault.
 | `/zukan:weekly` | Review the week: synthesize dailies, update project statuses |
 | `/zukan:recall` | Answer "when/what/where did I…" questions from the vault |
 | `/zukan:kiroku` | Persistent session chronicle — logs work into the vault as you go, until "stop kiroku" |
+| `/zukan:furikaeri` | Retroactive sweep — analyze the chat from the start, backfill everything into the vault |
 
 ## Vault layout assumed (PARA)
 

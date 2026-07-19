@@ -37,8 +37,9 @@ Missing pieces are created on first use. Vault root = the directory Claude Code 
 claude plugin marketplace add Jouskar/zukan
 claude plugin install zukan
 
-# or drop skills into one vault only
-cp -r skills/* <vault>/.claude/skills/
+# or drop into one vault only — both dirs needed:
+cp -r skills/* <vault>/.claude/skills/       # auto-invoked by message content
+cp -r commands/* <vault>/.claude/commands/   # /daily, /project-idea, ... in the slash-command autocomplete
 ```
 
 ## Always-on mode (no commands needed)

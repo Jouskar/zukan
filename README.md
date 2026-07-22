@@ -51,6 +51,27 @@ Two layers make zukan persistent from session start:
 
 With both, "today I fixed the CI pipeline" auto-routes to `daily` and kiroku logs session work — no slash commands ever.
 
+## Other AI tools (Codex, Cursor, Antigravity, Gemini CLI, ...)
+
+Claude Code's skills mechanism (auto-dereferenced `SKILL.md` files, `/`-command wrappers, hooks) is Claude-specific. Everything above is that native implementation. For other tools, zukan ships **`AGENTS.md`** — a single self-contained file with the full routing table and every behavior's steps inlined (since other tools have no skill file to defer to).
+
+| Tool | What it reads | Setup |
+|---|---|---|
+| Codex CLI | `AGENTS.md` at repo root (native) | `cp AGENTS.md <vault>/AGENTS.md` |
+| Cursor | `AGENTS.md` at repo root (native, recent versions) | same as above |
+| Antigravity | `AGENTS.md` (unconfirmed — verify against current docs) | same as above |
+| Gemini CLI | `GEMINI.md` | `cp adapters/GEMINI.md <vault>/GEMINI.md` (identical content, different filename) |
+| Claude Code | `CLAUDE.md` + `.claude/skills/` + `.claude/commands/` | see Install above |
+
+**Slash commands on other tools** (optional, autocomplete convenience — the AGENTS.md routing works without these):
+```bash
+cp adapters/codex-prompts/*.md   ~/.codex/prompts/         # Codex: /daily, /devlog, ...
+cp adapters/cursor-commands/*.md <vault>/.cursor/commands/  # Cursor: /daily, /devlog, ...
+```
+These directory conventions are current as of this writing but less stable across tool versions than `AGENTS.md` — if a command doesn't autocomplete, the routing table in `AGENTS.md`/`GEMINI.md` still applies to plain messages, just without slash-typing.
+
+Multiple convention files can coexist in the same vault (`CLAUDE.md` + `AGENTS.md` + `GEMINI.md` side by side) — each tool reads its own and ignores the others.
+
 ## Conventions the skills follow
 
 - Git commit after every meaningful change (vault = repo)

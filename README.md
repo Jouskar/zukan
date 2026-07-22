@@ -37,10 +37,11 @@ Missing pieces are created on first use. Vault root = the directory Claude Code 
 claude plugin marketplace add Jouskar/zukan
 claude plugin install zukan
 
-# or drop into one vault only — both dirs needed:
-cp -r skills/* <vault>/.claude/skills/       # auto-invoked by message content
-cp -r commands/* <vault>/.claude/commands/   # /daily, /project-idea, ... in the slash-command autocomplete
+# or drop into one vault only — run the sync script:
+./sync.sh /path/to/vault
 ```
+
+`sync.sh` symlinks `skills/` (fine to keep live) but **copies** `commands/` and the Codex/Cursor adapters as real files. This matters: Claude Code's slash-command scanner uses a glob with `followSymlinks:false`, which silently excludes symlinked command files from `/` autocomplete — skills load symlinked, commands do not. Re-run `sync.sh` after pulling zukan updates to refresh the copies.
 
 ## Always-on mode (no commands needed)
 
